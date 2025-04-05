@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # 默认值
-hostname="host1"
-swap_size="8G"
+hostname="hlocalhost"
+swap_size="0G"
 
 # 解析命令行参数
 while [[ $# -gt 0 ]]; do
