@@ -25,7 +25,7 @@ done
 # 修改主机名
 echo "$hostname" > /etc/hostname
 hostnamectl set-hostname "$hostname"
-echo "主机名已修改为: $hostname"
+echo -e "\033[33m主机名已修改为: $hostname\033[0m"
 
 # 修改交换空间
 fallocate -l $swap_size /swapfile
@@ -33,4 +33,4 @@ chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
 echo "/swapfile none swap sw 0 0" >> /etc/fstab
-echo "交换空间已设置为: $swap_size"
+echo -e "\033[33m交换空间已设置为: $swap_size\033[0m"
