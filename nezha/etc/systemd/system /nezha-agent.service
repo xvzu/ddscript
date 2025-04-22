@@ -6,7 +6,7 @@ ConditionFileIsExecutable=/opt/nezha/agent/nezha-agent
 [Service]
 StartLimitInterval=5
 StartLimitBurst=10
-ExecStart=/opt/nezha/agent/nezha-agent "-s" "vps-status.wekvm.com:5555" "-p" "10vrcw3SdauYfz0jQQ"
+ExecStart=/opt/nezha/agent/nezha-agent "-s" "地址:5555" "-p" "密钥"
 
 WorkingDirectory=/root
 
