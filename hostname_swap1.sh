@@ -50,3 +50,15 @@ if [[ -f "$script_file" ]]; then
   rm -f "$script_file"
   echo -e "\033[33m脚本文件已删除: $script_file\033[0m"
 fi
+
+# 新增部分：修改时区
+# 提示用户输入时区信息
+read -p "请输入时区（例如：Asia/Shanghai），如果要使用当前时区，请直接按回车: " timezone
+
+# 如果用户输入了时区，修改时区，否则保持当前时区
+if [[ -n "$timezone" ]]; then
+  sudo timedatectl set-timezone "$timezone"
+  echo -e "\033[33m时区已修改为: $timezone\033[0m"
+else
+  echo -e "\033[33m时区保持为当前时区\033[0m"
+fi
