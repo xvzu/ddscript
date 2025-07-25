@@ -95,7 +95,7 @@ case "$option" in
     docker version && docker compose version && docker ps -a --no-trunc
     ;;
 
-    7)
+  7)
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -104,14 +104,14 @@ case "$option" in
     curl -L https://raw.githubusercontent.com/spiritLHLS/earnfm-one-click-command-installation/main/earnfm.sh -o earnfm.sh && chmod +x earnfm.sh && bash earnfm.sh -m dbb030c1-2fe9-47d7-bafc-d54fbdab9ac2 && docker run -i --name tm --restart always traffmonetizer/cli_v2 start accept --token 8hqssSWZf/+782nFhpRvA3kamdBPTCbAZ2/McYhtG84=
     ;;
 
-    8)
+  8)
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     docker restart tm && docker run --restart unless-stopped packetshare/packetshare -accept-tos -email=vxoooo@outlook.com -password=Hsnx99qazxcvb
     ;;
 
-    9)
+  9)
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -123,37 +123,37 @@ case "$option" in
     sysctl net.ipv4.tcp_congestion_control && sudo -i
     ;;
 
-    10)
+  10)
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     rm -f ~/.bash_history && history -c && pkill -KILL -u $(who | awk '{print $1}' | sort | uniq)
     ;;
 
-    11)
+  11)
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     reboot
     ;;
 
-    12)
+  12)
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     systemctl daemon-reload && systemctl enable nezha-agent && systemctl restart nezha-agent && rm -f /root/nezha.sh /root/nezha_v0.sh && rm -f /root/earnfm.sh
     ;;
 
-    13)
+  13)
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     rm -f ~/.bash_history
     history -c
-    logout
+    logout  # 使用 logout 退出当前登录会话
     ;;
 
-    14)
+  14)
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
