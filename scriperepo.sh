@@ -123,8 +123,11 @@ case "$option" in
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     wget --no-check-certificate -O /opt/bbr.sh https://github.com/teddysun/across/raw/master/bbr.sh && chmod 755 /opt/bbr.sh && /opt/bbr.sh && rm -f /opt/bbr.sh && rm -f /opt/install_bbr.log
+
     
     sysctl net.ipv4.tcp_congestion_control && sudo -i
+
+    
     echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
     read -n 1 -s -r
     clear
