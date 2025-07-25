@@ -4,28 +4,28 @@
 clear && stty sane
 
 # 输出脚本选项菜单
-echo -e "\033[34m请输入选项 (01/02/03/04/00): \033[0m"  # 蓝色的提示
-
-echo -e "\033[33m01 - 官方 aaPanel\033[0m"  # 黄色
-echo -e "\033[33m02 - 宝塔11开心版 bt.sb\033[0m"  # 黄色
-echo -e "\033[33m03 - XrayR-wyx2685\033[0m"  # 黄色
-echo -e "\033[33m04 - 解锁检测\033[0m"  # 黄色
-echo -e "\033[33m00 - 退出\033[0m"  # 黄色
-
-read -p "请选择要执行的操作: " option
+echo -e "\033[34m请输入选项: \033[0m"  # 蓝色的提示
+echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+echo -e "\033[33m1 - 官方 aaPanel\033[0m"  # 黄色
+echo -e "\033[33m2 - 宝塔11开心版 bt.sb\033[0m"  # 黄色
+echo -e "\033[33m3 - XrayR-wyx2685\033[0m"  # 黄色
+echo -e "\033[33m4 - 解锁检测\033[0m"  # 黄色
+echo -e "\033[33m0 - 退出\033[0m"  # 黄色
+echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+read -p "请输入选项: " option
 
 # 输入有效性检查
 case "$option" in
-  01|02|03|04|00)
+  1|2|3|4|0)
     ;;
   *)
-    echo -e "\033[31m无效的选项，请选择 01, 02, 03, 04 或 00。\033[0m"
+    echo -e "\033[31m无效的选项\033[0m"
     exit 1
     ;;
 esac
 
 case "$option" in
-  01)
+  1)
     # 运行 aaPanel 安装命令
     clear
     echo -e "\033[33m正在安装...\033[0m"  # 黄色
@@ -40,7 +40,7 @@ case "$option" in
     fi
     ;;
 
-  02)
+  2)
     # 运行安装最新版本脚本命令
     clear
     echo -e "\033[33m正在安装...\033[0m"  # 黄色
@@ -54,7 +54,7 @@ case "$option" in
     fi
     ;;
 
-  03)
+  3)
     # 运行安装最新版本脚本命令
     clear
     echo -e "\033[33m正在安装...\033[0m"  # 黄色
@@ -62,14 +62,14 @@ case "$option" in
     bash <(curl -Ls https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.sh)
     ;;
     
-  04)
+  4)
     clear
     echo -e "\033[33m正在安装...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     bash <(curl -Ls https://example.com/Check.Place) -y  # 替换为有效的 URL
     ;;
     
-  00)
+  0)
     # 退出脚本
     clear
     echo -e "\033[33m退出脚本。\033[0m"  # 黄色
