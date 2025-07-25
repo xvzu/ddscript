@@ -66,7 +66,7 @@ case "$option" in
     clear
     echo -e "\033[33m正在安装...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
-    bash <(curl -Ls https://example.com/Check.Place) -y  # 替换为有效的 URL
+    bash <(curl -Ls Check.Place) -y
     ;;
     
   0)
