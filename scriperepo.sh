@@ -14,9 +14,10 @@ echo -e "\033[33m5 - Docker安装\033[0m"  # 黄色
 echo -e "\033[33m6 - DockerPS\033[0m"  # 黄色
 echo -e "\033[33m7 - 挂机2+3+5+1\033[0m"  # 黄色
 echo -e "\033[33m8 - 重启1+挂机4\033[0m"  # 黄色
-echo -e "\033[33m9 - BBR+清理重启哪吒客户端\033[0m"  # 黄色
+echo -e "\033[33m9 - BBR\033[0m"  # 黄色
 echo -e "\033[33m10 - 清理+注销所有root\033[0m"  # 黄色
 echo -e "\033[33m11 - 重启\033[0m"  # 黄色
+echo -e "\033[33m12 - 清理重启哪吒客户端\033[0m"  # 黄色
 
 echo -e "\033[33m0 - 退出\033[0m"  # 黄色
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -24,7 +25,7 @@ read -p "请输入选项: " option
 
 # 输入有效性检查
 case "$option" in
-  1|2|3|4|5|6|7|8|9|10|11|0)
+  1|2|3|4|5|6|7|8|9|10|11|12|0)
     ;;
   *)
     echo -e "\033[31m无效的选项\033[0m"
@@ -113,12 +114,8 @@ case "$option" in
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     wget --no-check-certificate -O /opt/bbr.sh https://github.com/teddysun/across/raw/master/bbr.sh && chmod 755 /opt/bbr.sh && /opt/bbr.sh && rm -f /opt/bbr.sh && rm -f /opt/install_bbr.log
 
-    1
+
     sysctl net.ipv4.tcp_congestion_control && sudo -i
-
-    systemctl daemon-reload && systemctl enable nezha-agent && systemctl restart nezha-agent && rm -f /root/nezha.sh /root/nezha_v0.sh
-
-    sudo -i
     ;;
 
     10)
@@ -134,6 +131,14 @@ case "$option" in
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     reboot
     ;;
+
+    12)
+    clear
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    systemctl daemon-reload && systemctl enable nezha-agent && systemctl restart nezha-agent && rm -f /root/nezha.sh /root/nezha_v0.sh
+    ;;
+
 
   0)
     # 退出脚本
