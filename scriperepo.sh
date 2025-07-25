@@ -36,7 +36,7 @@ case "$option" in
   1)
     # 运行 aaPanel 安装命令
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh
     if [ $? -eq 0 ]; then
@@ -51,7 +51,7 @@ case "$option" in
   2)
     # 运行安装最新版本脚本命令
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     curl -sSO http://io.bt.sb/install/install_latest.sh
     if [ $? -eq 0 ]; then
@@ -65,35 +65,35 @@ case "$option" in
   3)
     # 运行安装最新版本脚本命令
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     bash <(curl -Ls https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.sh)
     ;;
     
   4)
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     bash <(curl -Ls Check.Place) -y
     ;;
 
   5)
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     wget -qO- https://get.docker.com/ | sh && sudo -i
     ;;
 
   6)
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     docker version && docker compose version && docker ps -a --no-trunc
     ;;
 
     7)
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     docker run -d --restart=always -e CID=6UKb --name psclient packetstream/psclient:latest
     docker run --name repocket -e RP_EMAIL=vxoooo@outlook.com -e RP_API_KEY=c563bf3a-ec91-4826-97dc-4c18a0bc957a -d --restart=always repocket/repocket:1.1.33
@@ -102,14 +102,14 @@ case "$option" in
 
     8)
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     docker restart tm && docker run --restart unless-stopped packetshare/packetshare -accept-tos -email=vxoooo@outlook.com -password=Hsnx99qazxcvb
     ;;
 
     9)
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     wget --no-check-certificate -O /opt/bbr.sh https://github.com/teddysun/across/raw/master/bbr.sh && chmod 755 /opt/bbr.sh && /opt/bbr.sh && rm -f /opt/bbr.sh && rm -f /opt/install_bbr.log
 
@@ -123,14 +123,14 @@ case "$option" in
 
     10)
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     sudo -i && rm -f ~/.bash_history && history -c && pkill -KILL -u $(who | awk '{print $1}' | sort | uniq)
     ;;
 
     11)
     clear
-    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     reboot
     ;;
