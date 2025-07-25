@@ -28,19 +28,18 @@ echo -e "\033[33m0   - 退出\033[0m"  # 黄色
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 read -p "请输入选项: " option
 
-# 输入有效性检查
-case "$option" in
+
+case "$option" in  # 输入有效性检查
   1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|0)
     ;;
   *)
-    echo -e "\033[31m无效的选项\033[0m"
+    echo -e "\033[31m无效选项\033[0m"
     exit 1
     ;;
 esac
 
 case "$option" in
-  1)
-    # 运行 aaPanel 安装命令
+  1)  # 安装aapanel
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -52,10 +51,13 @@ case "$option" in
         echo "下载失败，退出脚本"
         exit 1
     fi
+    echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
+    read -n 1 -s -r
+    clear
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
-  2)
-    # 运行安装最新版本脚本命令
+  2)  # 安装bt.sb脚本
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -68,8 +70,7 @@ case "$option" in
     fi
     ;;
 
-  3)
-    # 运行安装最新版本脚本命令
+  3)  # 安装
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -88,6 +89,10 @@ case "$option" in
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     wget -qO- https://get.docker.com/ | sh && sudo -i
+    echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
+    read -n 1 -s -r
+    clear
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
   6)
@@ -177,9 +182,3 @@ case "$option" in
     exit 0
     ;;
 esac
-
-# 等待用户按下任意键，返回菜单
-echo -e "\033[32m按任意键继续...\033[0m"
-read -n 1 -s -r
-clear
-$0  
