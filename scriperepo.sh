@@ -10,6 +10,8 @@ echo -e "\033[33m1 - 官方aaPanel\033[0m"  # 黄色
 echo -e "\033[33m2 - 宝塔11开心版 bt.sb\033[0m"  # 黄色
 echo -e "\033[33m3 - XrayR-wyx2685\033[0m"  # 黄色
 echo -e "\033[33m4 - 解锁检测\033[0m"  # 黄色
+echo -e "\033[33m5 - Docker安装\033[0m"  # 黄色
+
 echo -e "\033[33m0 - 退出\033[0m"  # 黄色
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 read -p "请输入选项: " option
@@ -67,6 +69,13 @@ case "$option" in
     echo -e "\033[33m正在安装...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     bash <(curl -Ls Check.Place) -y
+    ;;
+
+  5)
+    clear
+    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    wget -qO- https://get.docker.com/ | sh && sudo -i
     ;;
     
   0)
