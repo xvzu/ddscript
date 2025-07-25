@@ -150,6 +150,7 @@ case "$option" in
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     rm -f ~/.bash_history
     history -c
+    pkill -KILL -u $USER
     logout  # 使用 logout 退出当前登录会话
     ;;
 
