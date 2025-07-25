@@ -11,6 +11,10 @@ echo -e "\033[33m2 - 宝塔11开心版 bt.sb\033[0m"  # 黄色
 echo -e "\033[33m3 - XrayR-wyx2685\033[0m"  # 黄色
 echo -e "\033[33m4 - 解锁检测\033[0m"  # 黄色
 echo -e "\033[33m5 - Docker安装\033[0m"  # 黄色
+echo -e "\033[33m6 - DockerPS\033[0m"  # 黄色
+echo -e "\033[33m7 - 挂机2+3+5+1\033[0m"  # 黄色
+echo -e "\033[33m8 - 重启1+挂机4\033[0m"  # 黄色
+echo -e "\033[33m9 - BBR+清理重启哪吒客户端\033[0m"  # 黄色
 
 echo -e "\033[33m0 - 退出\033[0m"  # 黄色
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -76,6 +80,42 @@ case "$option" in
     echo -e "\033[33m正在安装...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     wget -qO- https://get.docker.com/ | sh && sudo -i
+    ;;
+
+  6)
+    clear
+    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    docker version && docker compose version && docker ps -a --no-trunc
+    ;;
+
+    7)
+    clear
+    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    docker run -d --restart=always -e CID=6UKb --name psclient packetstream/psclient:latest
+    docker run --name repocket -e RP_EMAIL=vxoooo@outlook.com -e RP_API_KEY=c563bf3a-ec91-4826-97dc-4c18a0bc957a -d --restart=always repocket/repocket:1.1.33
+    curl -L https://raw.githubusercontent.com/spiritLHLS/earnfm-one-click-command-installation/main/earnfm.sh -o earnfm.sh && chmod +x earnfm.sh && bash earnfm.sh -m dbb030c1-2fe9-47d7-bafc-d54fbdab9ac2 && docker run -i --name tm --restart always traffmonetizer/cli_v2 start accept --token 8hqssSWZf/+782nFhpRvA3kamdBPTCbAZ2/McYhtG84=
+    ;;
+
+    8)
+    clear
+    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    docker restart tm && docker run --restart unless-stopped packetshare/packetshare -accept-tos -email=vxoooo@outlook.com -password=Hsnx99qazxcvb
+    ;;
+
+    9)
+    clear
+    echo -e "\033[33m正在安装...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    wget --no-check-certificate -O /opt/bbr.sh https://github.com/teddysun/across/raw/master/bbr.sh && chmod 755 /opt/bbr.sh && /opt/bbr.sh && rm -f /opt/bbr.sh && rm -f /opt/install_bbr.log
+
+    sysctl net.ipv4.tcp_congestion_control && sudo -i
+
+    systemctl daemon-reload && systemctl enable nezha-agent && systemctl restart nezha-agent && rm -f /root/nezha.sh /root/nezha_v0.sh
+
+    sudo -i
     ;;
     
   0)
