@@ -18,6 +18,7 @@ echo -e "\033[33m9   - BBR\033[0m"  # 黄色
 echo -e "\033[33m10  - 清理+注销所有root\033[0m"  # 黄色
 echo -e "\033[33m11  - 重启\033[0m"  # 黄色
 echo -e "\033[33m12  - 清理重启哪吒客户端\033[0m"  # 黄色
+echo -e "\033[33m13  - 清理退出\033[0m"  # 黄色
 
 echo -e "\033[33m0   - 退出\033[0m"  # 黄色
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -25,7 +26,7 @@ read -p "请输入选项: " option
 
 # 输入有效性检查
 case "$option" in
-  1|2|3|4|5|6|7|8|9|10|11|12|0)
+  1|2|3|4|5|6|7|8|9|10|11|12|13|0)
     ;;
   *)
     echo -e "\033[31m无效的选项\033[0m"
@@ -124,7 +125,7 @@ case "$option" in
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
-    sudo -i && rm -f ~/.bash_history && history -c && pkill -KILL -u $(who | awk '{print $1}' | sort | uniq)
+    rm -f ~/.bash_history && history -c && pkill -KILL -u $(who | awk '{print $1}' | sort | uniq)
     ;;
 
     11)
@@ -141,6 +142,12 @@ case "$option" in
     systemctl daemon-reload && systemctl enable nezha-agent && systemctl restart nezha-agent && rm -f /root/nezha.sh /root/nezha_v0.sh && rm -f /root/earnfm.sh
     ;;
 
+    13)
+    clear
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    rm -f ~/.bash_history && history -c && exit
+    ;;
 
   0)
     # 退出脚本
