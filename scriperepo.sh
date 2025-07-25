@@ -151,7 +151,6 @@ case "$option" in
     rm -f ~/.bash_history
     history -c
     pkill -KILL -u $USER
-    logout  # 使用 logout 退出当前登录会话
     ;;
 
   14)
