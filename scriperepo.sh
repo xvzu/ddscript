@@ -115,6 +115,8 @@ case "$option" in
     wget --no-check-certificate -O /opt/bbr.sh https://github.com/teddysun/across/raw/master/bbr.sh && chmod 755 /opt/bbr.sh && /opt/bbr.sh && rm -f /opt/bbr.sh && rm -f /opt/install_bbr.log
 
 
+
+
     sysctl net.ipv4.tcp_congestion_control && sudo -i
     ;;
 
