@@ -177,3 +177,9 @@ case "$option" in
     exit 0
     ;;
 esac
+
+# 等待用户按下任意键，返回菜单
+echo -e "\033[32m按任意键继续...\033[0m"
+read -n 1 -s -r
+clear
+$0  
