@@ -3,7 +3,7 @@
 
 clear && stty sane  # 清屏并将光标移到屏幕顶部
 
-# 输出脚本选项菜单👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+# 输出脚本选项菜单👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
 echo -e "\033[34m👋  请输入选项：\033[0m"  # 蓝色的提示
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 echo -e "\033[33m 1 👉  官方aaPanel\033[0m"  # 黄色
@@ -39,7 +39,7 @@ esac
 case "$option" in
 
 
-  1)  # 安装aapanel👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  1)  # 安装aapanel👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -57,7 +57,7 @@ case "$option" in
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
-  2)  # 安装bt.sb脚本👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  2)  # 安装bt.sb脚本👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -70,21 +70,21 @@ case "$option" in
     fi
     ;;
 
-  3)  # 安装XrayR-wyx2685👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  3)  # 安装XrayR-wyx2685👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     bash <(curl -Ls https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.sh)
     ;;
     
-  4)  # 解锁检测👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  4)  # 解锁检测👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     bash <(curl -Ls Check.Place) -y
     ;;
 
-  5)  # Docker安装👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  5)  # Docker安装👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -95,14 +95,14 @@ case "$option" in
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
-  6)  # DockerPS👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  6)  # DockerPS👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     docker version && docker compose version && docker ps -a --no-trunc
     ;;
 
-  7)  # 挂机2+3+5+1👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  7)  # 挂机2+3+5+1👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -111,14 +111,14 @@ case "$option" in
     curl -L https://raw.githubusercontent.com/spiritLHLS/earnfm-one-click-command-installation/main/earnfm.sh -o earnfm.sh && chmod +x earnfm.sh && bash earnfm.sh -m dbb030c1-2fe9-47d7-bafc-d54fbdab9ac2 && docker run -i --name tm --restart always traffmonetizer/cli_v2 start accept --token 8hqssSWZf/+782nFhpRvA3kamdBPTCbAZ2/McYhtG84=
     ;;
 
-  8)  # 重启1+挂机4👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  8)  # 重启1+挂机4👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     docker restart tm && docker run --restart unless-stopped packetshare/packetshare -accept-tos -email=vxoooo@outlook.com -password=Hsnx99qazxcvb
     ;;
 
-  9)  # 开启BBR👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  9)  # 开启BBR👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -134,28 +134,28 @@ case "$option" in
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
-  10)  # 无👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  10)  # 无👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     无
     ;;
 
-  11)  # 重启👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  11)  # 重启👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     reboot
     ;;
 
-  12)  # 清理+重启哪吒客户端👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  12)  # 清理+重启哪吒客户端👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     systemctl daemon-reload && systemctl enable nezha-agent && systemctl restart nezha-agent && rm -f /root/nezha.sh /root/nezha_v0.sh && rm -f /root/earnfm.sh
     ;;
 
-  13)  # 清理注销👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  13)  # 清理注销👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -164,14 +164,14 @@ case "$option" in
     pkill -KILL -u $USER
     ;;
 
-  14)  # 清理+退出root👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  14)  # 清理+退出root👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     rm -f ~/.bash_history && history -c && pkill -KILL -u root
     ;;
 
-  15)  # 安装wyx2685 V2board后端👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  15)  # 安装wyx2685 V2board后端👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -179,7 +179,7 @@ case "$option" in
     ;;
 
 
-  0)  # 安装👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  0)  # 安装👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     # 退出脚本
     clear
     echo -e "\033[33m👋  退出脚本  👋\033[0m"  # 黄色
