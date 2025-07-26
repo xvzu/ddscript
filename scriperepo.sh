@@ -68,6 +68,10 @@ case "$option" in
         echo "下载失败，退出脚本"
         exit 1
     fi
+    echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
+    read -n 1 -s -r
+    clear
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
   3)  # 安装XrayR-wyx2685👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
@@ -75,6 +79,10 @@ case "$option" in
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     bash <(curl -Ls https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.sh)
+    echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
+    read -n 1 -s -r
+    clear
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
     
   4)  # 解锁检测👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
@@ -82,6 +90,10 @@ case "$option" in
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     bash <(curl -Ls Check.Place) -y
+    echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
+    read -n 1 -s -r
+    clear
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
   5)  # Docker安装👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
