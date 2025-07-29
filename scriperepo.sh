@@ -11,14 +11,14 @@ echo -e "\033[33m 2 👉  宝塔11开心版 bt.sb\033[0m"  # 黄色
 echo -e "\033[33m 3 👉  XrayR-wyx2685\033[0m"  # 黄色
 echo -e "\033[33m 4 👉  解锁检测\033[0m"  # 黄色
 echo -e "\033[33m 5 👉  Docker安装\033[0m"  # 黄色
-echo -e "\033[33m 6 👉  DockerPS\033[0m"  # 黄色
+echo -e "\033[33m 6 👉  Docker+PS\033[0m"  # 黄色
 echo -e "\033[33m 7 👉  挂机2+3+5+1\033[0m"  # 黄色
 echo -e "\033[33m 8 👉  重启1+挂机4\033[0m"  # 黄色
 echo -e "\033[33m 9 👉  开启BBR\033[0m"  # 黄色
 echo -e "\033[33m10 👉  DD为Debian12\033[0m"  # 黄色
 echo -e "\033[33m11 👉  重启\033[0m"  # 黄色
-echo -e "\033[33m12 👉  宝塔 C大 baota.la\033[0m"  # 黄色
-echo -e "\033[33m13 👉  宝塔云安全监控 C大 baota.la\033[0m"  # 黄色
+echo -e "\033[33m12 👉  C大 baota.la 宝塔\033[0m"  # 黄色
+echo -e "\033[33m13 👉  C大 baota.la 宝塔云安全监控\033[0m"  # 黄色
 echo -e "\033[33m14 👉  清理+退出root\033[0m"  # 黄色
 echo -e "\033[33m15 👉  安装wyx2685 V2board后端\033[0m"  # 黄色
 
@@ -107,7 +107,7 @@ case "$option" in
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
-  6)  # DockerPS👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  6)  # Docker+PS👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
