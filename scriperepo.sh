@@ -21,7 +21,7 @@ echo -e "\033[33m12 👉  C大 baota.la 宝塔\033[0m"  # 黄色
 echo -e "\033[33m13 👉  C大 baota.la 宝塔云安全监控\033[0m"  # 黄色
 echo -e "\033[33m14 👉  清理+退出root\033[0m"  # 黄色
 echo -e "\033[33m15 👉  安装wyx2685 V2board后端\033[0m"  # 黄色
-
+echo -e "\033[33m16 👉  安装warp\033[0m"  # 黄色
 
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 echo -e "\033[33m0  👉  退出 👋\033[0m"  # 黄色
@@ -29,7 +29,7 @@ echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 read -p "请输入选项: " option
 
 case "$option" in  # 输入有效性检查
-  1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|0)
+  1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|0)
     ;;
   *)
     echo -e "\033[31m无效选项\033[0m"
@@ -213,7 +213,16 @@ case "$option" in
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
-
+  16)  # 安装wyx2685 V2board后端👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+    clear
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh
+    echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
+    read -n 1 -s -r
+    clear
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
+    ;;
   0)  # 安装👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     # 退出脚本
     clear
