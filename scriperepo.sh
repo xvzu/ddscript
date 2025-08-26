@@ -22,7 +22,7 @@ echo -e "\033[33m13 👉  C大 baota.la 宝塔云安全监控\033[0m"  # 黄色
 echo -e "\033[33m14 👉  清理+退出root\033[0m"  # 黄色
 echo -e "\033[33m15 👉  安装wyx2685 V2board后端\033[0m"  # 黄色
 echo -e "\033[33m16 👉  安装warp\033[0m"  # 黄色
-echo -e "\033[33m17 👉  安装warp\033[0m"  # 黄色
+echo -e "\033[33m17 👉  重启xrayr+日志\033[0m"  # 黄色
 
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 echo -e "\033[33m0  👉  退出 👋\033[0m"  # 黄色
@@ -214,7 +214,7 @@ case "$option" in
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
-  16)  # 安装wyx2685 V2board后端👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  16)  # 安装warp👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
@@ -225,7 +225,7 @@ case "$option" in
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
-    17)  # 安装wyx2685 V2board后端👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+    17)  # 重启xrayr，查看日志👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
