@@ -22,6 +22,7 @@ echo -e "\033[33m13 👉  C大 baota.la 宝塔云安全监控\033[0m"  # 黄色
 echo -e "\033[33m14 👉  清理+退出root\033[0m"  # 黄色
 echo -e "\033[33m15 👉  安装wyx2685 V2board后端\033[0m"  # 黄色
 echo -e "\033[33m16 👉  安装warp\033[0m"  # 黄色
+echo -e "\033[33m17 👉  安装warp\033[0m"  # 黄色
 
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 echo -e "\033[33m0  👉  退出 👋\033[0m"  # 黄色
@@ -223,6 +224,19 @@ case "$option" in
     clear
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
+
+    17)  # 安装wyx2685 V2board后端👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+    clear
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    systemctl restart XrayR
+    journalctl -u XrayR -f
+    echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
+    read -n 1 -s -r
+    clear
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
+    ;;
+
   0)  # 安装👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     # 退出脚本
     clear
