@@ -16,7 +16,7 @@ echo -e "\033[33m 7 👉  挂机2+3+5+1\033[0m"  # 黄色
 echo -e "\033[33m 8 👉  重启1+挂机4\033[0m"  # 黄色
 echo -e "\033[33m 9 👉  开启BBR\033[0m"  # 黄色
 echo -e "\033[33m10 👉  DD为Debian13\033[0m"  # 黄色
-echo -e "\033[33m11 👉  重启\033[0m"  # 黄色
+echo -e "\033[33m11 👉  DD为Debian12\033[0m"  # 黄色
 echo -e "\033[33m12 👉  C大 baota.la 宝塔\033[0m"  # 黄色
 echo -e "\033[33m13 👉  C大 baota.la 宝塔云安全监控\033[0m"  # 黄色
 echo -e "\033[33m14 👉  清理+退出root\033[0m"  # 黄色
@@ -159,18 +159,18 @@ case "$option" in
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
-  10)  # DD为Debian12👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  10)  # DD为Debian13👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh || wget -O reinstall.sh $_ && bash reinstall.sh debian 13 --ssh-port 55555 --ssh-key "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCr6sPe8m02u8+vkrFOKG1Mxrzw/D+bOCDMdrbrJwoMSyMweDaXOVgHKz9cVfHdwNXZD96u6IEgtTuIOmqv2xqCHdTSW6vIV3LkcEpH08VF+uWNMZjc8HtqnVn8S5aQtAa1BVBUZjg+9WOEZk6qDD2/JYknTOGnkC/2hG0oT/7mPrSEVMyw8lDvtI4rGl1H6QzGIp7cf14UK7JbA7wfbj+NxHnIup4HHbwDQCv6tNvIYL89mFqdDV1c+9sbBGjmqNnEvyYHU+cxxdOxoRh+jy/yBnaBCfxinUk9kyxCXEenZtv97u31kcSyOO6Txxxzxg1WDZyT3lA4QvSxCw8Kzp8INRNehz0+AQa5Nz3jVvfDEdEt3AfP6jSaxQtEK9sR7Os9GJAp3J4QDmpugWO8NdLZ7yeF/Zr/KfD4VqbDGrze5a5axPOcHaoBWG0zvpOltaU0X0xJ40lGsX5zp4+rx1LEKYDuy/WSulnzItT7zIQiHKT15yxdT3HUeBHp1Kmw0o0hANOqqucrGO9x04KsozXbL9n6eu7THBxwTpGKLNLAhi4NAn8BzWzfzYB7xmZLHl7aTzMJx/chqq1CVySYIt+oLBuqsM638L5ewpea9gXGE0P4lxkgHdJVES9gT30nFjad1Lk/KRTAaXK+ucrtDz29BXtr7yoBhRblTF725AwB/Q== root@root" && reboot
     ;;
 
-  11)  # 重启👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+  11)  # DD为Debian12👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
-    reboot
+    curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh || wget -O reinstall.sh $_ && bash reinstall.sh debian 12 --ssh-port 55555 --ssh-key "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCr6sPe8m02u8+vkrFOKG1Mxrzw/D+bOCDMdrbrJwoMSyMweDaXOVgHKz9cVfHdwNXZD96u6IEgtTuIOmqv2xqCHdTSW6vIV3LkcEpH08VF+uWNMZjc8HtqnVn8S5aQtAa1BVBUZjg+9WOEZk6qDD2/JYknTOGnkC/2hG0oT/7mPrSEVMyw8lDvtI4rGl1H6QzGIp7cf14UK7JbA7wfbj+NxHnIup4HHbwDQCv6tNvIYL89mFqdDV1c+9sbBGjmqNnEvyYHU+cxxdOxoRh+jy/yBnaBCfxinUk9kyxCXEenZtv97u31kcSyOO6Txxxzxg1WDZyT3lA4QvSxCw8Kzp8INRNehz0+AQa5Nz3jVvfDEdEt3AfP6jSaxQtEK9sR7Os9GJAp3J4QDmpugWO8NdLZ7yeF/Zr/KfD4VqbDGrze5a5axPOcHaoBWG0zvpOltaU0X0xJ40lGsX5zp4+rx1LEKYDuy/WSulnzItT7zIQiHKT15yxdT3HUeBHp1Kmw0o0hANOqqucrGO9x04KsozXbL9n6eu7THBxwTpGKLNLAhi4NAn8BzWzfzYB7xmZLHl7aTzMJx/chqq1CVySYIt+oLBuqsM638L5ewpea9gXGE0P4lxkgHdJVES9gT30nFjad1Lk/KRTAaXK+ucrtDz29BXtr7yoBhRblTF725AwB/Q== root@root" && reboot
     ;;
 
   12)  # 无👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
