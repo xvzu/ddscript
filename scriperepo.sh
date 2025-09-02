@@ -24,7 +24,7 @@ echo -e "\033[33m15 👉  安装wyx2685 V2board后端\033[0m"  # 黄色
 echo -e "\033[33m16 👉  安装warp\033[0m"  # 黄色
 echo -e "\033[33m17 👉  重启xrayr+日志\033[0m"  # 黄色
 echo -e "\033[33m18 👉  DD为AlmaLinux 8\033[0m"  # 黄色
-
+echo -e "\033[33m19 👉  AlmaLinux+CentOS安装依赖\033[0m"  # 黄色
 
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 echo -e "\033[33m0  👉  退出 👋\033[0m"  # 黄色
@@ -32,7 +32,7 @@ echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 read -p "请输入选项: " option
 
 case "$option" in  # 输入有效性检查
-  1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|0)
+  1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||0)
     ;;
   *)
     echo -e "\033[31m无效选项\033[0m"
@@ -250,6 +250,25 @@ case "$option" in
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
 
+    19)  # DD为AlmaLinux 8👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+    clear
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    sudo dnf install -y sudo wget curl git screen zip tar unzip vim nano socat rsync
+    curl -O https://raw.githubusercontent.com/xvzu/ddscript/main/.bashrc
+    mv .bashrc ~/
+    cd /etc/ssh/
+    sudo curl -O https://raw.githubusercontent.com/xvzu/ddscript/main/sshd_config
+    sudo systemctl restart sshd
+    cd ~
+    sudo dnf update -y
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/hostname_swap1.sh)
+    sudo -i
+    echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
+    read -n 1 -s -r
+    clear
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
+    ;;
 
 
 
