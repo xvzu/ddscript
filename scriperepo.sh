@@ -23,6 +23,8 @@ echo -e "\033[33m14 👉  清理+退出root\033[0m"  # 黄色
 echo -e "\033[33m15 👉  安装wyx2685 V2board后端\033[0m"  # 黄色
 echo -e "\033[33m16 👉  安装warp\033[0m"  # 黄色
 echo -e "\033[33m17 👉  重启xrayr+日志\033[0m"  # 黄色
+echo -e "\033[33m18 👉  DD为AlmaLinux 8\033[0m"  # 黄色
+
 
 echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 echo -e "\033[33m0  👉  退出 👋\033[0m"  # 黄色
@@ -30,7 +32,7 @@ echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
 read -p "请输入选项: " option
 
 case "$option" in  # 输入有效性检查
-  1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|0)
+  1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|0)
     ;;
   *)
     echo -e "\033[31m无效选项\033[0m"
@@ -236,6 +238,20 @@ case "$option" in
     clear
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
     ;;
+
+    18)  # DD为AlmaLinux 8👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+    clear
+    echo -e "\033[33m运行中...\033[0m"  # 黄色
+    echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh || wget -O reinstall.sh $_ && bash reinstall.sh AlmaLinux 8 --ssh-port 55555 --ssh-key "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCr6sPe8m02u8+vkrFOKG1Mxrzw/D+bOCDMdrbrJwoMSyMweDaXOVgHKz9cVfHdwNXZD96u6IEgtTuIOmqv2xqCHdTSW6vIV3LkcEpH08VF+uWNMZjc8HtqnVn8S5aQtAa1BVBUZjg+9WOEZk6qDD2/JYknTOGnkC/2hG0oT/7mPrSEVMyw8lDvtI4rGl1H6QzGIp7cf14UK7JbA7wfbj+NxHnIup4HHbwDQCv6tNvIYL89mFqdDV1c+9sbBGjmqNnEvyYHU+cxxdOxoRh+jy/yBnaBCfxinUk9kyxCXEenZtv97u31kcSyOO6Txxxzxg1WDZyT3lA4QvSxCw8Kzp8INRNehz0+AQa5Nz3jVvfDEdEt3AfP6jSaxQtEK9sR7Os9GJAp3J4QDmpugWO8NdLZ7yeF/Zr/KfD4VqbDGrze5a5axPOcHaoBWG0zvpOltaU0X0xJ40lGsX5zp4+rx1LEKYDuy/WSulnzItT7zIQiHKT15yxdT3HUeBHp1Kmw0o0hANOqqucrGO9x04KsozXbL9n6eu7THBxwTpGKLNLAhi4NAn8BzWzfzYB7xmZLHl7aTzMJx/chqq1CVySYIt+oLBuqsM638L5ewpea9gXGE0P4lxkgHdJVES9gT30nFjad1Lk/KRTAaXK+ucrtDz29BXtr7yoBhRblTF725AwB/Q== root@root" && reboot
+    echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
+    read -n 1 -s -r
+    clear
+    bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/scriperepo.sh)
+    ;;
+
+
+
 
   0)  # 安装👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
     # 退出脚本
