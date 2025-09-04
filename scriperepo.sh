@@ -255,6 +255,8 @@ case "$option" in
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
     sudo dnf install -y sudo wget curl git screen zip tar unzip vim nano socat rsync
+    sudo dnf install -y sudo wget
+    sudo dnf install -y sudo unzip
     curl -O https://raw.githubusercontent.com/xvzu/ddscript/main/.bashrc
     mv .bashrc ~/
     cd /etc/ssh/
