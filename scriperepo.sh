@@ -254,6 +254,10 @@ case "$option" in
     clear
     echo -e "\033[33m运行中...\033[0m"  # 黄色
     echo -e "\033[32m------------------------\033[0m"  # 绿色分隔线
+    sudo dnf makecache
+    sudo dnf update -y
+    sudo dnf install kernel kernel-core kernel-modules -y
+    sudo dnf clean all
     sudo dnf install -y sudo wget curl git screen zip tar unzip vim nano socat rsync
     sudo dnf install -y sudo wget
     sudo dnf install -y sudo unzip
