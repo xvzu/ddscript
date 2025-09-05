@@ -263,11 +263,6 @@ case "$option" in
     sudo dnf install -y sudo unzip
     curl -O https://raw.githubusercontent.com/xvzu/ddscript/main/.bashrc
     mv .bashrc ~/
-    cd /etc/ssh/
-    sudo curl -O https://raw.githubusercontent.com/xvzu/ddscript/main/sshd_config
-    sudo systemctl restart sshd
-    cd ~
-    sudo dnf update -y
     bash <(curl -sL https://raw.githubusercontent.com/xvzu/ddscript/main/hostname_swap1.sh)
     sudo -i
     echo -e "\033[32m按任意键继续...\033[0m"  # 任意键继续
