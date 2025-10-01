@@ -35,5 +35,3 @@ caddy version
 
 echo "检查 Caddy 服务状态..."
 sudo systemctl status caddy
-
-echo "Caddy 安装完成并已启动，服务设置为开机自启！"
