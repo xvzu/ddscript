@@ -19,7 +19,6 @@ cd "$PPANEL_DIR"
 
 # 创建 docker-compose.yml
 cat > docker-compose.yml <<EOF
-version: "3.8"
 services:
   ppanel-db:
     image: mysql:8.0
