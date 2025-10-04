@@ -10,7 +10,7 @@ CADDYFILE="/etc/caddy/Caddyfile"
 LOG_DIR="/var/log/caddy"
 
 # 1. 输入域名
-echo "请输入你的域名（例如 1.xusms.com）："
+echo "请输入你的域名（例如 x.com）："
 read DOMAIN
 
 # 2. 选择网站类型
@@ -23,7 +23,7 @@ CONFIG_BLOCK=""
 
 if [ "$SITE_TYPE" == "1" ]; then
     # 静态文件模式
-    read -p "请输入静态文件目录（例如 /root/xfjsq）： " SITE_ROOT
+    read -p "请输入静态文件目录（例如 /root/x）： " SITE_ROOT
     CONFIG_BLOCK="$DOMAIN {
     root * $SITE_ROOT
     file_server
